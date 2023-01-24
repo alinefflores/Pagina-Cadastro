@@ -1,0 +1,8 @@
+.banner {
+    text-align: center;
+    height: 200px;
+}
+
+.banner img {
+    max-width: 100%;
+}
