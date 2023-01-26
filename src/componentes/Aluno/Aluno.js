@@ -1,6 +1,6 @@
 import './Aluno.css'
 
-const Aluno = ({ nome, imagem, cidade, corDeFundo }) => {
+const Aluno = ({ nome, imagem, sobrenome, corDeFundo }) => {
     return (
         <div className='aluno'>
             <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
@@ -9,7 +9,7 @@ const Aluno = ({ nome, imagem, cidade, corDeFundo }) => {
             
             <div className='rodape'>
                 <h4>{nome}</h4>
-                <h5>{cidade}</h5>
+                <h5>{sobrenome}</h5>
             </div>
        </div>
     )   

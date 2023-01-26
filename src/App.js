@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/Banner.js';
 import Formulario from './componentes/Formulario/Formulario.js';
 import Curso from './componentes/Curso/Curso.js';
+import Rodape from './componentes/Rodape/Rodape.js';
 
 function App() {
 
@@ -62,6 +63,8 @@ function App() {
         corSecundaria={curso.corSecundaria} 
         alunos={alunos.filter(aluno => aluno.curso === curso.nome)}
       />)}   
+
+      <Rodape/>
 
     </div>
   );
