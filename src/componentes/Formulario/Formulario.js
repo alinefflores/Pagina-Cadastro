@@ -29,11 +29,11 @@ const Formulario = (props) => {
             <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados dos alunos</h2>
                 
-                <CampoTexto obrigatorio={true} label='Nome' valor={nome} aoAlterado={valor => setNome(valor)}/>
+                <CampoTexto obrigatorio={true} label='Nome' placeholder='Digite seu nome'valor={nome} aoAlterado={valor => setNome(valor)}/>
 
-                <CampoTexto obrigatorio={true} label='Cidade' valor={cidade} aoAlterado={valor => setCidade(valor)} />
+                <CampoTexto obrigatorio={true} label='Cidade' placeholder='Digite sua cidade' valor={cidade} aoAlterado={valor => setCidade(valor)} />
 
-                <CampoTexto label='Imagem' valor={imagem} aoAlterado={valor => setImagem(valor)}/>
+                <CampoTexto label='Imagem' placeholder='https://github.com/PERFIL.png' valor={imagem} aoAlterado={valor => setImagem(valor)}/>
 
                 <ListaSuspensa obrigatorio={true} label='Cursos' itens={props.cursos} valor={curso} aoAlterado={valor => setCurso(valor)}/>
 

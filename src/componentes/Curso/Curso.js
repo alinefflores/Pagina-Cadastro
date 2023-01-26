@@ -1,7 +1,7 @@
 import Aluno from '../Aluno/Aluno.js'
 import './Curso.css'
 
-const Curso= (props) => {
+const Curso = (props) => {
     const css = { backgroundColor: props.corSecundaria }
 
     return (

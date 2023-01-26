@@ -9,7 +9,7 @@ function CampoTexto(props) {
     return (
         <div className='campo__texto'>
             <label>{props.label}</label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder= {`Preencha com ${props.label}`} />
+            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder= {props.placeholder}/>
         </div>
     )
 }
