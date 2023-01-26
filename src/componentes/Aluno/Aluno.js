@@ -1,4 +1,4 @@
-import '.Aluno.css'
+import './Aluno.css'
 
 const Aluno = ({ nome, cidade, imagem, corDeFundo }) => {
     return (<div className='aluno'>

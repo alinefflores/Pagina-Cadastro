@@ -1,4 +1,4 @@
-import '../Aluno/Aluno.js'
+import Aluno from '../Aluno/Aluno.js'
 import './Curso.css'
 
 const Curso= (props) => {
