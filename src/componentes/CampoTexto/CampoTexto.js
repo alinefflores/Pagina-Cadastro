@@ -13,5 +13,5 @@ function CampoTexto(props) {
         </div>
     )
 }
-// campo texto esta delegando o controle do estado para quem for usar ele
+
 export default CampoTexto

@@ -5,8 +5,7 @@ import ListaSuspensa from '../ListaSuspensa/ListaSuspensa.js'
 import Botao from '../Botao/Botao.js'
 
 const Formulario = (props) => {
-    const cursos = ['administração', 'contabilidade', 'programação']
-
+    
     const [nome, setNome] = useState('')
     const [cidade, setCidade] = useState('')
     const [imagem, setImagem] = useState('')
@@ -16,7 +15,14 @@ const Formulario = (props) => {
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.aoAlunoCadastrado({nome, cidade, imagem, curso})
+
+        setNome('')
+        setCidade('')
+        setImagem('')
+        setCurso('')
     }
+
+    
 
     return (
         <section className='formulario'>
@@ -29,7 +35,7 @@ const Formulario = (props) => {
 
                 <CampoTexto label='Imagem' valor={imagem} aoAlterado={valor => setImagem(valor)}/>
 
-                <ListaSuspensa obrigatorio={true} label='Cursos' itens={cursos} valor={curso} aoAlterado={valor => setCurso(valor)}/>
+                <ListaSuspensa obrigatorio={true} label='Cursos' itens={props.cursos} valor={curso} aoAlterado={valor => setCurso(valor)}/>
 
                 <Botao>Cadastrar</Botao>
             </form>
