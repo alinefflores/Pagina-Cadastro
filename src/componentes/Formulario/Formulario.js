@@ -1,10 +1,10 @@
-import { userState } from 'react'
+import { useState } from 'react'
 import './Formulario.css'
 import CampoTexto from '../CampoTexto/CampoTexto.js'
 import ListaSuspensa from '../ListaSuspensa/ListaSuspensa.js'
 import Botao from '../Botao/Botao.js'
 
-const Formulario = () => {
+const Formulario = (props) => {
     const cursos = ['administração', 'contabilidade', 'programação']
 
     const [nome, setNome] = useState('')
@@ -15,6 +15,7 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
+        props.aoAlunoCadastrado({nome, cidade, imagem, curso})
     }
 
     return (
